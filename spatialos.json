@@ -1,0 +1,8 @@
+{
+    "name": "my_project",
+    "project_version": "1.0.0",
+    "sdk_version": "11.0.0",
+    "dependencies": [
+    	{"name": "standard_library", "version": "11.0.0"}
+    ]
+}

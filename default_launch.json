@@ -1,0 +1,32 @@
+{
+  "template": "small",
+  "world": {
+    "chunkEdgeLengthMeters": 50,
+    "snapshots": {
+      "snapshotWritePeriodSeconds": 0
+    },
+    "dimensions": {
+      "xMeters": 8000,
+      "zMeters": 8000
+    }
+  },
+  "workers": [
+    {
+      "worker_type": "WebClient",
+      "permissions": [{
+          "entity_creation": {
+          "allow": true
+        },
+        "entity_deletion": {
+          "allow": false
+        },
+        "entity_query": {
+          "allow": true,
+          "components": [
+              "*"
+          ]
+        }
+      }]
+    }
+  ]
+}

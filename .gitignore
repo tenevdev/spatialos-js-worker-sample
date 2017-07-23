@@ -1,0 +1,15 @@
+spatial.log
+
+.spatialos
+
+build/
+logs/
+
+node_modules/
+dependencies/
+generated/
+
+spatialos_worker_packages.json
+package.json
+spatialos.javascript.build.json
+webpack.config.js
