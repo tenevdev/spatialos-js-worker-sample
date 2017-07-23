@@ -16,7 +16,6 @@ locatorParameters.loginToken = {
   token: sdk.DefaultConfiguration.LOCAL_DEVELOPMENT_LOGIN_TOKEN
 };
 
-
 let workerType = "WebClient";
 const connectionParameters = new sdk.ConnectionParameters();
 connectionParameters.workerType = workerType;
@@ -59,7 +58,7 @@ locator.getDeploymentList((err, deploymentList) => {
         if (op.requestId.id === entityIdReservationRequestId.id && op.statusCode === sdk.StatusCode.SUCCESS) {
           let entity = new sdk.Entity();
 
-          // Empty ACL
+          // ACL with read access and Position-write access for "client" workers
           let clientAttributeSet = createWorkerAttributeSet(["client"]);
 
           let entityAcl = new EntityAclData();
